@@ -10,9 +10,8 @@
  */
 int main(void)
 {
-	char Mystr[] = "and that piece of art is useful\"
-		- Dora Korpar, 2015-10-19\n";
+	char M[] = "and that piece of art is useful\"- Dora Korpar, 2015-10-19\n";
 
-	write(1, Mystr, 59);
+	write(1, M, 59);
 	return (1);
 }
