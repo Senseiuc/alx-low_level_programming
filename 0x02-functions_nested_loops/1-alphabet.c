@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * print_alphabeth - prints all alphabets
+ * print_alphabet - prints all alphabets
  *
- * Description: a function that prints alphabets,
- * and do not return anythig
+ * Description: 'a function that prints alphabets,
+ * and do not return anythig'
+ *
+ * Return: void
  */
 
 void print_alphabet(void)
