@@ -3,13 +3,16 @@
 /**
  * main - fizzbuzz
  *
- * Description: prints fizz for %3 buzz for %5 
+ * Description: prints fizz for %3 buzz for %5
  * and fizzbuzz for both
+ *
+ * Return: 0 (Success)
  */
 
-void main(void)
+int main(void)
 {
 	int i = 1;
+
 	while (i <= 100)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
@@ -24,5 +27,6 @@ void main(void)
 		i++;
 	}
 	printf("\n");
+	return (0);
 }
 
