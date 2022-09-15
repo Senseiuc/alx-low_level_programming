@@ -23,9 +23,11 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%d", i);
-		printf(" ");
+		if (i != 100)
+			printf(" ");
 		i++;
 	}
+	printf("\n");
 	return (0);
 }
 
