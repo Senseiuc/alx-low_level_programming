@@ -10,7 +10,7 @@ int is_seperator(char c);
 
 int is_seperator(char c)
 {
-	char sep[] = ",;.!?\"(){} \t\n";
+	char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(',')', '{', '}'};
 	int i = 0;
 
 	while (sep[i] != '\0')
