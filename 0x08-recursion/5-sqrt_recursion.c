@@ -2,7 +2,7 @@
 
 /**
  * _find_root - returns the natural square root of a number.
- *@n: the int arguement 
+ *@n: the int arguement
  *@w:a counter variable
  *
  * Return: int
@@ -28,5 +28,5 @@ int _find_root(int n, int w)
 
 int _sqrt_recursion(int n)
 {
-	return (_find_root(n , 0));
+	return (_find_root(n, 0));
 }
