@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 				if (cnt_non_dig(argv[i]) == 1)
 				{
 					printf("Error\n");
-					exit(EXIT_SUCCESS);
+					return (1);
 				}
 			}
 			sum += atoi(argv[i]);
