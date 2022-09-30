@@ -42,13 +42,10 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) == 0)
+			if (cnt_non_dig(argv[i]) == 1)
 			{
-				if (cnt_non_dig(argv[i]) == 1)
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
 			sum += atoi(argv[i]);
 		}
