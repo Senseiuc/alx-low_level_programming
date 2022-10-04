@@ -34,7 +34,7 @@ char *concat_string(char *str, char *str2, int a, int b)
 	char *arr;
 	int j = 0;
 
-	arr = (char *) malloc((a + b) * sizeof(char));
+	arr = (char *) malloc((a + b + 1) * sizeof(char));
 
 	if (arr != NULL)
 	{
