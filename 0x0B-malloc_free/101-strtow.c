@@ -28,13 +28,13 @@ int get_string_count(char *str)
 char **strtow(char *str)
 {
 	char **newArray;
-	int j, k, found = 0, l, m, wc = 0, length = get_string_count(str);
+	int j, k = 0, found = 0, l, m, wc = 0, length = get_string_count(str);
 
 	if (str[0] == '\0' || str == NULL)
 	{
 		return (NULL);
 	}
-	for (j = 0; j < length; j++)/* calculate the number of words*/
+	for (j = 0; j <= length; j++)/* calculate the number of words*/
 	{                      /* in the string given*/
 		if ((str[j] == ' ' || str[j] == '\0') && found == 1)
 		{
@@ -46,12 +46,12 @@ char **strtow(char *str)
 		else
 			found = 0;
 	}
-	newArray = (char **) malloc((k) * sizeof(char *));
-	if (newArray == NULL)
+	newArray = (char **) malloc((k + 1) * sizeof(char *));
+	if (newArray == NULL || k == 0)
 		return (NULL);
 	k = 0; /* for iterating the array of pointers*/
 	found = 0;
-	for (j = 0; j < length; j++) /* iterate through the string to create*/
+	for (j = 0; j <= length; j++) /* iterate through the string to create*/
 	{                            /* arrays of strings seperated by space*/
 		if (str[j] != ' ' && str[j] != '\0')
 		{
@@ -63,12 +63,13 @@ char **strtow(char *str)
 			newArray[k] = (char *)malloc((wc + 1) * sizeof(char));
 			l = 0;
 			m = j - wc;
-			while ((m + l) < j)
+			while (m < j)
 			{
-				newArray[k][l] = str[m + l];
+				newArray[k][l] = str[m];
 				l++;
+				m++;
 			}
-			newArray[wc] = '\0';
+			newArray[k][wc] = '\0';
 			found = 0;
 			wc = 0;
 			k++;
@@ -80,5 +81,6 @@ char **strtow(char *str)
 		}
 
 	}
+	newArray[k] = NULL;
 	return (newArray);
 }
