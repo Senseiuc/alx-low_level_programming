@@ -21,23 +21,6 @@ int get_string_count(char *str)
 }
 
 /**
- *free_grid - frees a two dimensional array
- *@grid: the 2-D array to be freed
- *@height: the heigth of the array
- *
- *Return: the address of the array created
- */
-/*
-void free_grid(int **grid, int height)
-{
-	int i;
-
-	for (i = 0; i < height; i++)
-		free(grid[i]);
-	free(grid);
-}*/
-
-/**
  *concat_string - create a copy of string using malloc
  *@str: the string to be added to
  *@str2: the string to be added
@@ -52,7 +35,7 @@ char *concat_string(char *str, char *str2, unsigned int a, unsigned int b)
 	char *arr;
 	unsigned int j = 0;
 
-	arr = malloc((a + b + 1) * sizeof(arr));
+	arr = malloc((a + b + 1) * sizeof(char));
 
 	if (arr != NULL)
 	{
