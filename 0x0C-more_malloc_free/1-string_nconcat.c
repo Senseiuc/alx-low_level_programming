@@ -79,7 +79,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else if (s1 == NULL)
 	{
 		j = get_string_count(s2);
-		return (concat_string(a, s2, 0, j));
+		if (n <= k)
+			return (concat_string(a, s2, 0, n));
+		else
+			return (concat_string(a, s2, 0, j));
 	}
 	else if (s2 == NULL)
 	{

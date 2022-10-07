@@ -11,7 +11,7 @@ int main(void)
 {
 	    char *concat;
 
-	        concat = string_nconcat("Bestie", NULL, 10);
+	        concat = string_nconcat("Bestie", "-3", 2);
 		    printf("%s\n", concat);
 		        free(concat);
 			    return (0);
