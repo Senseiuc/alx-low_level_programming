@@ -4,7 +4,7 @@
 /**
   *_calloc - create a memory and fill it with 0
   *@nmemb: the number of arrays
-  *@size: the size of the  
+  *@size: the size of the
   *
   *Return: the address of the memory or null
   */
