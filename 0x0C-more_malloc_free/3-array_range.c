@@ -4,7 +4,7 @@
 /**
   *array_range - create a memory and fill it with a range of numbers
   *@min: the minimum num in the array
-  *@max: the maximum num in the array 
+  *@max: the maximum num in the array
   *
   *Return: the address of the memory or null
   */
@@ -12,7 +12,7 @@
 int *array_range(int min, int max)
 {
 	int *arr;
-	int i,j = 0;
+	int i, j = 0;
 	int size;
 
 	if (min > max)
