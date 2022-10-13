@@ -15,10 +15,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(ap, n);         /* Initialize the argument list. */
 	for (i = 0; i < n - 1; i++)
 	{
-		if (separator)
-			printf("%d%s", va_arg(ap, int), separator);
-		else
-			printf("%d", va_arg(ap, int));
+		printf("%d", va_arg(ap, int));
+		if (separator != NULL)
+			printf("%s", separator);
 	}
 	printf("%d\n", va_arg(ap, int));
 	va_end(ap);                  /* Clean up. */
