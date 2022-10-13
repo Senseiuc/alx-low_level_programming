@@ -1,3 +1,4 @@
+#include "variadic_functions.h"
 /**
   *print_numbers - print integers with a seperator
   *@separator: a string
