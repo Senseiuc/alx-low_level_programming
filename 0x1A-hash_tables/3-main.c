@@ -18,9 +18,10 @@ int main(void)
     hash_table_set(ht, "betty", "cool");
 	hash_table_set(ht, "hetairas", "cooler");
 	hash_table_set(ht, "mentioner", "cooler2");
-	s = "betty";
+	s = "hetairas";
 	key = key_index((unsigned char *)s, ht->size);
 
-	printf("%s", ht->array[key]->value);
+	printf("%s\n", ht->array[key]->next->value);
+	printf("%s\n", ht->array[key]->value);
     return (EXIT_SUCCESS);
 }
