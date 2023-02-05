@@ -1,9 +1,11 @@
+#include <stdio.h>
 /**
  * add - addition operation
  * @a: first operand
  * @b: second operand
  * Return: result
  */
+
 int add(int a, int b)
 {
 	return (a + b);
