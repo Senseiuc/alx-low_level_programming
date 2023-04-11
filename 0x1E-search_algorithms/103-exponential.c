@@ -4,7 +4,8 @@
  * in an array of integers using
  * the binary search algorithm
  * @array: a pointer to the array
- * @size: the size of the array
+ * @left: the left index of the array
+ * @right: the right index of the array
  * @value: the value to be found
  *
  * Return: an integer
