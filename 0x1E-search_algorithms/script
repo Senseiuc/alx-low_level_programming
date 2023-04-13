@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+for file in i-jump_list.c
+do 
+    vi +':w ++ff=unix' +':q' "$file"
+done
